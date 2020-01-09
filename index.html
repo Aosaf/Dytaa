@@ -445,6 +445,31 @@
     <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="js/calia.js" type="text/javascript"></script>
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+    <!-- Facebook Messenger Chat Plugin Start -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v5.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="104322107656430"
+         theme_color="#f5af00"
+         logged_in_greeting="Hello. You can also send us a message on Facebook Messenger."
+         logged_out_greeting="Hello. You can also send us a message on Facebook Messenger.">
+    </div>
+    <!-- Facebook Messenger Chat Plugin End -->
 </body>
 
 </html>
